@@ -1,0 +1,377 @@
+
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Siva Catering Service</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#0b0b0b;
+color:#f5f5f5;
+scroll-behavior:smooth;
+}
+
+/* NAVBAR */
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(8px);
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+}
+
+nav h2{
+font-family:'Playfair Display',serif;
+letter-spacing:1px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-size:14px;
+opacity:0.9;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.85)),
+url("images/catering-bg.jpg");
+background-size:cover;
+background-position:center;
+
+display:flex;
+align-items:center;
+padding-left:8%;
+}
+
+.hero h1{
+font-family:'Playfair Display',serif;
+font-size:70px;
+line-height:1.1;
+
+background:linear-gradient(90deg,#ffd27f,#ff8c42,#ff3c38,#ffd27f);
+background-size:300%;
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+animation:shine 6s linear infinite;
+}
+
+@keyframes shine{
+0%{background-position:0%}
+100%{background-position:300%}
+}
+
+/* SECTIONS */
+section{
+padding:90px 8%;
+text-align:center;
+}
+
+h2{
+font-family:'Playfair Display',serif;
+font-size:36px;
+margin-bottom:30px;
+}
+
+p{
+max-width:850px;
+margin:auto;
+line-height:1.8;
+font-size:18px;
+}
+
+/* VIDEO */
+.video-box{
+max-width:900px;
+margin:auto;
+}
+
+video{
+width:100%;
+border-radius:14px;
+box-shadow:0 30px 60px rgba(0,0,0,0.8);
+}
+
+/* GALLERY */
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:25px;
+}
+
+.food-card{
+position:relative;
+overflow:hidden;
+border-radius:14px;
+}
+
+.food-card img{
+width:100%;
+height:240px;
+object-fit:cover;
+transition:transform .6s;
+}
+
+.food-card:hover img{
+transform:scale(1.15);
+}
+
+/* SERVICE CARDS */
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.service{
+background:#151515;
+padding:30px;
+border-radius:12px;
+transition:.3s;
+}
+
+.service:hover{
+transform:translateY(-6px);
+background:#1f1f1f;
+}
+
+/* REVIEWS */
+.review{
+display:none;
+background:#141414;
+padding:30px;
+border-radius:12px;
+max-width:600px;
+margin:auto;
+}
+
+.review.active{
+display:block;
+}
+
+/* MAP */
+.map iframe{
+width:100%;
+height:400px;
+border:0;
+border-radius:12px;
+}
+
+/* WHATSAPP */
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+color:white;
+padding:16px 22px;
+border-radius:40px;
+text-decoration:none;
+font-weight:600;
+box-shadow:0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* FADE ANIMATION */
+.fade{
+opacity:0;
+transform:translateY(30px);
+transition:all 1s;
+}
+
+.fade.show{
+opacity:1;
+transform:translateY(0);
+}
+
+/* FOOTER */
+footer{
+background:#000;
+text-align:center;
+padding:30px;
+color:#aaa;
+}
+
+@media(max-width:700px){
+.hero h1{font-size:42px}
+section{padding:70px 6%}
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<h2>Siva Catering</h2>
+<div>
+<a href="#">Home</a>
+<a href="#">Services</a>
+<a href="#">Gallery</a>
+<a href="#">Contact</a>
+</div>
+</nav>
+
+<div class="hero">
+<h1>சிவா கேட்டரிங் சர்வீஸ்</h1>
+</div>
+
+<section class="fade">
+<h2>எங்களை பற்றி</h2>
+<p>
+சிவா கேட்டரிங் சர்வீஸ் – சங்கராபுரம் பகுதியில் சுவையான மற்றும் சுத்தமான உணவு
+சேவையை வழங்கும் சிறந்த கேட்டரிங் நிறுவனம். திருமணம், குடும்ப விழாக்கள்,
+பிறந்தநாள் நிகழ்ச்சிகள் மற்றும் அனைத்து நிகழ்ச்சிகளுக்கும் எங்கள் சேவை கிடைக்கும்.
+</p>
+</section>
+
+<section class="fade">
+<h2>எங்கள் சேவைகள்</h2>
+
+<div class="services">
+
+<div class="service">🍛 திருமண கேட்டரிங்</div>
+<div class="service">🎉 பிறந்தநாள் விழா</div>
+<div class="service">🍽 கார்ப்பரேட் நிகழ்ச்சிகள்</div>
+<div class="service">🥘 சைவ / அசைவ உணவுகள்</div>
+
+</div>
+
+</section>
+
+<section class="fade">
+
+<h2>Catering Experience</h2>
+
+<div class="video-box">
+<video id="video" muted playsinline>
+<source src="videos/catering.mp4" type="video/mp4">
+</video>
+</div>
+
+</section>
+
+<section class="fade">
+
+<h2>Food Gallery</h2>
+
+<div class="gallery">
+
+<div class="food-card"><img src="images/food1.jpg"></div>
+<div class="food-card"><img src="images/food2.jpg"></div>
+<div class="food-card"><img src="images/food3.jpg"></div>
+
+</div>
+
+</section>
+
+<section class="fade">
+
+<h2>Customer Reviews</h2>
+
+<div class="review active">
+⭐⭐⭐⭐⭐ <br><br>
+சுவையான உணவு மற்றும் சிறந்த சேவை.
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐ <br><br>
+Sankarapuram பகுதியில் சிறந்த கேட்டரிங்.
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐ <br><br>
+Highly recommended catering service.
+</div>
+
+</section>
+
+<section class="map fade">
+<h2>Location</h2>
+
+<iframe src="https://maps.google.com/maps?q=sankarapuram&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+
+</section>
+
+<section class="fade">
+<h2>தொடர்பு கொள்ள</h2>
+
+<p>
+📍 இடம் : சங்கராபுரம் <br><br>
+📞 மொபைல் : 9585468524 <br><br>
+WhatsApp மூலம் ஆர்டர் செய்யலாம்
+</p>
+
+</section>
+
+<a class="whatsapp" href="https://wa.me/919585468524">WhatsApp Order</a>
+
+<footer>
+© 2026 Siva Catering Service
+</footer>
+
+<script>
+
+/* review slider */
+
+let reviews=document.querySelectorAll(".review");
+let i=0;
+
+setInterval(()=>{
+reviews[i].classList.remove("active");
+i++;
+if(i>=reviews.length){i=0}
+reviews[i].classList.add("active");
+},3000);
+
+/* scroll animation */
+
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add("show");
+}
+});
+});
+
+document.querySelectorAll(".fade").forEach(el=>observer.observe(el));
+
+/* video autoplay on scroll */
+
+const video=document.getElementById("video");
+
+const videoObserver=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+video.currentTime=0;
+video.play();
+}else{
+video.pause();
+}
+
+});
+},{threshold:0.6});
+
+videoObserver.observe(video);
+
+</script>
+
+</body>
+</html>
