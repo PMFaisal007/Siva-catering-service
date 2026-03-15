@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Siva Catering Service</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+scroll-behavior:smooth;
+}
+
+body{
+background:#fafafa;
+}
+
+/* HERO */
+
+.hero{
+
+height:100vh;
+
+background-image:url("https://images.unsplash.com/photo-1504674900247-0877df9cc836");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+
+}
+
+.hero h1{
+font-size:55px;
+background:rgba(0,0,0,0.6);
+padding:20px 40px;
+border-radius:10px;
+}
+
+/* SECTIONS */
+
+section{
+padding:60px 20px;
+text-align:center;
+}
+
+/* MENU CARDS */
+
+.menu{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:20px;
+
+padding:20px;
+}
+
+.card{
+
+background:white;
+
+padding:20px;
+
+border-radius:10px;
+
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+
+transition:0.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+}
+
+/* FOOD GALLERY */
+
+.gallery{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+
+gap:15px;
+
+padding:20px;
+
+}
+
+.gallery img{
+
+width:100%;
+
+border-radius:10px;
+
+transition:0.4s;
+
+}
+
+.gallery img:hover{
+
+transform:scale(1.05);
+
+}
+
+/* REVIEW */
+
+.reviews{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:20px;
+
+padding:20px;
+
+}
+
+.review{
+
+background:white;
+
+padding:20px;
+
+border-radius:10px;
+
+box-shadow:0 4px 15px rgba(0,0,0,0.1);
+
+}
+
+/* MAP */
+
+.map iframe{
+
+width:100%;
+
+height:300px;
+
+border:none;
+
+}
+
+/* CONTACT */
+
+.contact{
+
+background:#8b0000;
+
+color:white;
+
+padding:50px;
+
+}
+
+/* WHATSAPP BUTTON */
+
+.whatsapp{
+
+position:fixed;
+
+bottom:20px;
+
+right:20px;
+
+background:#25D366;
+
+color:white;
+
+padding:15px 22px;
+
+border-radius:50px;
+
+font-size:18px;
+
+text-decoration:none;
+
+box-shadow:0 5px 20px rgba(0,0,0,0.3);
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<div class="hero">
+
+<div>
+
+<h1>Siva Catering Service</h1>
+
+<p>Sankarapuram</p>
+
+<p>சைவம் & அசைவம் கேட்டரிங்</p>
+
+</div>
+
+</div>
+
+
+<!-- ABOUT -->
+
+<section>
+
+<h2>எங்களை பற்றி</h2>
+
+<p>
+
+Siva Catering Service சங்கராபுரத்தில் செயல்படும் சிறந்த கேட்டரிங் சேவை.
+
+திருமணம், பிறந்தநாள் விழா, குடும்ப நிகழ்ச்சிகள், நிறுவன விழாக்கள்
+
+போன்ற அனைத்து நிகழ்ச்சிகளுக்கும் சுவையான சைவம் மற்றும் அசைவம்
+
+உணவுகளை மலிவான விலையில் வழங்குகிறோம்.
+
+</p>
+
+</section>
+
+
+<!-- MENU PRICE CARDS -->
+
+<section>
+
+<h2>எங்கள் மெனு</h2>
+
+<div class="menu">
+
+<div class="card">
+
+<h3>Veg Meals</h3>
+
+<p>₹120 / plate</p>
+
+</div>
+
+<div class="card">
+
+<h3>Chicken Biryani</h3>
+
+<p>₹180 / plate</p>
+
+</div>
+
+<div class="card">
+
+<h3>Mutton Biryani</h3>
+
+<p>₹250 / plate</p>
+
+</div>
+
+<div class="card">
+
+<h3>Special Wedding Menu</h3>
+
+<p>Contact for price</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FOOD GALLERY -->
+
+<section>
+
+<h2>எங்கள் உணவுகள்</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1604908176997-431b2dbe9a8f">
+
+<img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398">
+
+<img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7">
+
+<img src="https://images.unsplash.com/photo-1563379091339-03246963d96c">
+
+</div>
+
+</section>
+
+
+<!-- VIDEO -->
+
+<section>
+
+<h2>எங்கள் கேட்டரிங்</h2>
+
+<iframe width="320" height="220"
+
+src="https://www.youtube.com/embed/tgbNymZ7vqY">
+
+</iframe>
+
+</section>
+
+
+<!-- REVIEWS -->
+
+<section>
+
+<h2>Customer Reviews</h2>
+
+<div class="reviews">
+
+<div class="review">
+
+⭐ ⭐ ⭐ ⭐ ⭐
+
+<p>சிறந்த சுவையான உணவு. அனைவருக்கும் மிகவும் பிடித்தது.</p>
+
+<b>- Ramesh</b>
+
+</div>
+
+<div class="review">
+
+⭐ ⭐ ⭐ ⭐ ⭐
+
+<p>திருமண விழாவில் கேட்டரிங் அருமையாக இருந்தது.</p>
+
+<b>- Kavitha</b>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- GOOGLE MAP -->
+
+<section class="map">
+
+<h2>Location</h2>
+
+<iframe
+
+src="https://maps.google.com/maps?q=sankarapuram&t=&z=13&ie=UTF8&iwloc=&output=embed">
+
+</iframe>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact">
+
+<h2>Contact</h2>
+
+<p>Siva Catering Service</p>
+
+<p>Sankarapuram</p>
+
+<p>📞 9585468524</p>
+
+</section>
+
+
+<!-- WHATSAPP -->
+
+<a class="whatsapp"
+
+href="https://wa.me/919585468524"
+
+target="_blank">
+
+Order on WhatsApp
+
+</a>
+
+</body>
+</html>
